@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@
     text-decoration: none;
 }
 
-nav{
+nav {
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,68 +21,80 @@ nav{
     justify-content: space-between;
     padding: 0px 10px;
 }
-.logo img{
+
+.logo img {
     width: 80px;
     height: auto;
 }
-.nav-menu ul{
+
+.nav-menu ul {
     display: flex;
 }
-.nav-menu a{
-color: #2c2c2c;
-font-size: 16px;
-text-transform: capitalize;
-padding: 0px 20px;
-font-weight: 400;
-transition: all .4s ease;
+
+.nav-menu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 0px 20px;
+    font-weight: 400;
+    transition: all .4s ease;
 }
-.nav-menu a:hover{
+
+.nav-menu a:hover {
     color: #EE1C47;
 }
-.nav-icon{
+
+.nav-icon {
     display: flex;
     align-items: center;
 }
-.nav-icon i{
+
+.nav-icon i {
     margin-left: 20px;
     color: #2c2c2c;
     font-size: 25px;
     transition: all .42s ease;
 }
 
-.nav-icon i:hover{
+.nav-icon i:hover {
     transform: scale(1.1);
     color: #EE1C47;
 }
-.menu-icon{
+
+.menu-icon {
     font-size: 35px;
     color: #2c2c2c;
     z-index: 10001;
     cursor: pointer;
 }
-section{
+
+section {
     padding: 5% 10%;
 }
-.header{
-width: 100%;
-height: 100vh;
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bg.jpg);
-background-image: url(images/bg1.jpg);
-background-position: center;
-background-size: cover;
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg.jpg);
+    background-image: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-#home{
+
+#home {
     height: 80vh;
     display: flex;
     align-items: center;
 }
-.main h5{
+
+.main h5 {
     color: #EE1C47;
     font-size: 65px;
     text-transform: capitalize;
     font-weight: 500;
 }
-.main h1{
+
+.main h1 {
     color: #000;
     font-size: 65px;
     text-transform: capitalize;
@@ -91,13 +102,15 @@ background-size: cover;
     line-height: 1.1;
     margin: 6px 0 10px;
 }
-.main p{
-color: #333c56;
-font-size: 20px;
-font-style: italic;
-margin-bottom: 20px;
+
+.main p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
 }
-.main-btn{
+
+.main-btn {
     display: inline-block;
     color: #111;
     font-size: 16px;
@@ -107,19 +120,21 @@ margin-bottom: 20px;
     transition: all .42s ease;
     padding: 12px 25px;
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background-color: #000;
     color: #fff;
 }
 
 /* down arrow button css */
-.down-arrow{
+.down-arrow {
     position: absolute;
     top: 85%;
     right: 11%;
     color: #000;
 }
-.down i{
+
+.down i {
     font-size: 30px;
     color: #2c2c2c;
     border: 2px solid #EE1C47;
@@ -127,7 +142,8 @@ margin-bottom: 20px;
     padding: 12px 12px;
     color: #EE1C47;
 }
-.down i:hover{
+
+.down i:hover {
     font-size: 30px;
     color: #2c2c2c;
     border: 2px solid #EE1C47;
@@ -137,47 +153,58 @@ margin-bottom: 20px;
     color: #fff;
 }
 
-/* on scroll stickey effect */
 
-nav.sticky{
+/* on scroll sticky class css */
+/* sticky class add using javascript */
+
+nav.sticky {
     background-color: #fff;
-    padding: 10px 10%;
-    box-shadow: 0px 0px 10px ;
+    padding: 0px 10%;
+    box-shadow: 0px 0px 10px;
 }
 
-.center-text{
+/* commen class for text center */
+
+.center-text {
     color: #111;
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
 }
-.center-text span{
+
+.center-text span {
     color: #EE1C47;
 }
-.Products-row{
+
+/* product list part css */
+/* parent class apply flex */
+.Products-row {
     margin-top: 50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-  
-}
-.column{
-width: 300px;
-/* height: 300px; */
-position: relative;
 
 }
-.column img{
+
+.column {
+    width: 300px;
+    position: relative;
+
+}
+
+.column img {
     width: 100%;
     height: 350px;
     transition: all .40s;
 }
-.column img:hover{
+
+.column img:hover {
     transform: scale(0.9);
 }
-.product-text h5{
+
+.product-text h5 {
     position: absolute;
     top: 13px;
     left: 13px;
@@ -188,49 +215,59 @@ position: relative;
     padding: 3px 10px;
     border-radius: 2px solid;
 }
-.heart-icon{
+
+.heart-icon {
     position: absolute;
     right: 0;
     font-size: 20px;
 }
-.heart-icon:hover{
+
+.heart-icon:hover {
     color: #EE1C47;
     font-size: 18px;
 }
-.price h4{
+
+.price h4 {
     color: #111;
     font-size: 16px;
     text-transform: capitalize;
 }
-.price p{
+
+.price p {
     color: #151515;
     font-size: 14px;
     font-weight: 600;
 }
-.client-reviews{
+
+.client-reviews {
     background-color: #F3F4F6;
 }
-.reviews h3{
-columns: #111;
-font-size: 25px;
-text-transform: capitalize;
-text-align: center;
-font-weight: 700;
+
+/* client review section */
+.reviews h3 {
+    columns: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
 }
-.reviews img{
+
+.reviews img {
     width: 100px;
     height: auto;
     border-radius: 50px;
     margin: 10px 0;
 }
-.reviews p{
+
+.reviews p {
     columns: #707070;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 10px;
 }
-.reviews h2{
+
+.reviews h2 {
     font-size: 22px;
     color: #000;
     font-weight: 400;
@@ -238,16 +275,107 @@ font-weight: 700;
     margin-bottom: 2px;
 }
 
-.cart img{
-    width:380px;
-    height: 200px;
-    border-radius: 5px;
-}
-.update-cart{
+
+
+/* new update part css */
+.update-cart {
     margin-top: 50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 1px;  */
+    gap: 30px;
+
 }
+
+.cart {
+    width: 300px;
+    position: relative;
+
+}
+
+.cart img {
+    width: 100%;
+    height: 350px;
+    transition: all .40s;
+}
+
+.cart img:hover {
+    transform: scale(0.9);
+}
+
+.cart h5{
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.cart h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cart p{
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+.cart h6{
+    color: #151515;
+    font-size: 14px;
+}
+
+/* footer contact section css */
+.contact{
+    background-color: #F3F4F6;
+}
+.contact-info{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contact-info p:hover{
+    color: #EE1C47;
+}
+.social-icon i{
+    color: #565656;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+/* footer copyright section */
+.end-text{
+background: #edfff1;
+text-align: center;
+padding: 20px;
+}
+.end-text p{
+    columns: #111;
+    text-transform: capitalize;
+}
+
